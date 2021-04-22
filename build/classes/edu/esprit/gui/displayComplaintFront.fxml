@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="775.0" style="-fx-background-color: #CCC6F4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.DisplayComplaintFrontController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="1.0" prefHeight="502.0" prefWidth="775.0" style="-fx-background-color: #CCC6F4;" stylesheets="@dark-theme.css">
+         <children>
+            <TableView fx:id="ComplaintTable" layoutX="15.0" layoutY="41.0" onMouseClicked="#detail" prefHeight="210.0" prefWidth="739.0">
+               <columns>
+                  <TableColumn fx:id="titleComplaint" prefWidth="150.0" text="Title" />
+                  <TableColumn fx:id="contentComplaint" prefWidth="477.0" text="Content" />
+                  <TableColumn fx:id="statusComplaint" minWidth="0.0" prefWidth="111.0" text="Status" />
+               </columns>
+            </TableView>
+            <Button fx:id="addComplaintBtn" layoutX="24.0" layoutY="273.0" mnemonicParsing="false" onAction="#addComplaint" prefHeight="32.0" prefWidth="88.0" text="ADD" />
+            <Button fx:id="updateComplaintBtn" layoutX="140.0" layoutY="273.0" mnemonicParsing="false" onAction="#updateComplaint" prefHeight="32.0" prefWidth="88.0" text="UPDATE" />
+            <Button fx:id="removeComplaintBtn" layoutX="257.0" layoutY="273.0" mnemonicParsing="false" onAction="#removeComplaint" prefHeight="32.0" prefWidth="88.0" text="REMOVE" />
+            <Label fx:id="label" layoutX="518.0" layoutY="259.0" prefHeight="219.0" prefWidth="235.0" textFill="#5b5858" wrapText="true" />
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="274.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="287.0" prefWidth="600.0" style="-fx-background-color: #CCC6F4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.AddFeedbackFrontController">
+   <children>
+      <TextArea fx:id="description" layoutX="40.0" layoutY="26.0" prefHeight="200.0" prefWidth="508.0" promptText="Aa..." stylesheets="@dark-theme.css" />
+      <Button fx:id="addbtn" layoutX="240.0" layoutY="241.0" mnemonicParsing="false" onAction="#send" prefHeight="31.0" prefWidth="109.0" stylesheets="@dark-theme.css" text="Post" />
+   </children>
+</AnchorPane>

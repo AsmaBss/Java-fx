@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="999.0" style="-fx-background-color: #CCC6F4;" stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.DisplayAllController">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="1010.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dashboard.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="ComplaintTable" layoutX="201.0" layoutY="254.0" onMouseClicked="#detail" prefHeight="200.0" prefWidth="773.0">
+        <columns>
+          <TableColumn fx:id="titleComplaint" prefWidth="129.0" text="Title" />
+            <TableColumn fx:id="contentComplaint" prefWidth="387.0" text="Content" />
+            <TableColumn fx:id="userComplaint" prefWidth="123.0" text="User" />
+            <TableColumn fx:id="statusComplaint" minWidth="0.0" prefWidth="121.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="addComplaintBtn" layoutX="216.0" layoutY="478.0" mnemonicParsing="false" onAction="#addComplaint" prefHeight="33.0" prefWidth="81.0" text="ADD" />
+      <Button fx:id="updateComplaintBtn" layoutX="309.0" layoutY="478.0" mnemonicParsing="false" onAction="#updateComplaint" prefHeight="33.0" prefWidth="81.0" text="UPDATE" />
+      <Button fx:id="removeComplaintBtn" layoutX="403.0" layoutY="478.0" mnemonicParsing="false" onAction="#removeComplaint" prefHeight="33.0" prefWidth="81.0" text="REMOVE" />
+      <Button fx:id="statBtn" layoutX="499.0" layoutY="478.0" mnemonicParsing="false" onAction="#statComplaint" prefHeight="33.0" prefWidth="81.0" text="STAT" />
+      <Label fx:id="label" layoutX="699.0" layoutY="474.0" prefHeight="167.0" prefWidth="265.0" textFill="#5b5858" wrapText="true" />
+      <Button fx:id="treatBtn" layoutX="598.0" layoutY="478.0" mnemonicParsing="false" onAction="#treat" prefHeight="33.0" prefWidth="81.0" text="TREAT" />
+      <Label layoutX="241.0" layoutY="176.0" style="-fx-font-size: 40;" text="Complaints" />
+      <Circle fill="#691fff" layoutX="96.0" layoutY="75.0" radius="44.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
