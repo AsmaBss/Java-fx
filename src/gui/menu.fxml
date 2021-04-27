@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="791.0" prefWidth="1086.0" style="-fx-background-color: #8A88ED;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MenuController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1070.0" layoutX="-39.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/menu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_candidat" layoutX="545.0" layoutY="607.0" mnemonicParsing="false" onAction="#candidats" prefHeight="108.0" prefWidth="121.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn_direction" layoutX="219.0" layoutY="595.0" mnemonicParsing="false" onAction="#direction" prefHeight="138.0" prefWidth="153.0" style="-fx-background-color: transparent;" />
+      <Text fx:id="labelll" fill="WHITE" layoutX="14.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="336.536678314209">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Button fx:id="btn_employers" layoutX="720.0" layoutY="534.0" mnemonicParsing="false" onAction="#employers" prefHeight="161.0" prefWidth="196.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn_logout" layoutX="848.0" layoutY="34.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="67.0" stylesheets="@../images/dark-theme.css" text="logout" />
+      <Button fx:id="offersbtn" layoutX="693.0" layoutY="250.0" mnemonicParsing="false" onAction="#offers" opacity="0.0" prefHeight="119.0" prefWidth="140.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="offersbtn1" layoutX="232.0" layoutY="257.0" mnemonicParsing="false" onAction="#offers1" opacity="0.0" prefHeight="119.0" prefWidth="140.0" style="-fx-background-color: transparent;" />
+      <Circle fx:id="circle3" fill="DODGERBLUE" layoutX="72.0" layoutY="74.0" onMouseClicked="#GoToProfile" radius="58.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="complaints" layoutX="336.0" layoutY="43.0" mnemonicParsing="false" onAction="#complaints" opacity="0.0" prefHeight="195.0" prefWidth="147.0" />
+      <Button fx:id="article" layoutX="567.0" layoutY="222.0" mnemonicParsing="false" onAction="#article" opacity="0.0" prefHeight="71.0" prefWidth="109.0" />
+      <Button layoutX="232.0" layoutY="194.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="667.0" layoutY="482.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="410.0" layoutY="470.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="436.0" layoutY="553.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="680.0" layoutY="179.0" rotate="33.7" text="Events" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="event" layoutX="647.0" layoutY="155.0" mnemonicParsing="false" onAction="#event" opacity="0.0" prefHeight="71.0" prefWidth="147.0" />
+   </children>
+</AnchorPane>

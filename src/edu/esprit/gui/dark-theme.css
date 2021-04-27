@@ -72,12 +72,7 @@
     
 }
 
-.label
-{
-    
-    -fx-text-fill: gray;
-    -fx-font-size: 11pt;
-}
+
 .combo-box
 {
         -fx-font-family : Caveat;

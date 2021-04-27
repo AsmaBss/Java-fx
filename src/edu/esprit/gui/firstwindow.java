@@ -29,11 +29,14 @@ public class firstwindow extends Application {
     //displayComplaintFront  --> complaints client
     //DisplayAllFeedback     --> feedbacks admin
     //ShowJobFront           --> feedbacks client
+    //ShowJob                --> feedbacks admin
+    
+    
     
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("displayComplaintFront.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("displayAll.fxml"));
             
             Scene scene = new Scene(root);
             

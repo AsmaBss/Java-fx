@@ -68,6 +68,8 @@ public class DisplayComplaintFrontController implements Initializable {
     public static int id;
     @FXML
     private ImageView img;
+    @FXML
+    private Button back;
     /**
      * Initializes the controller class.
      */
@@ -200,5 +202,19 @@ stage.getIcons().add(new Image("/edu/esprit/gui/icon.png"));
     
     public int idd(){
         return id ;
+    }
+
+    @FXML
+    private void back(ActionEvent event) {
+        
+        
+          FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/menu.fxml"));
+
+        try {
+            Parent root = loader.load();
+            ComplaintTable.getScene().setRoot(root);
+        } catch (IOException ex) {
+            
+        }
     }
 }

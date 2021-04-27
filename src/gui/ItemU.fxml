@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="235.0" prefWidth="166.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ItemUController">
+   <children>
+      <ImageView fx:id="img" fitHeight="178.0" fitWidth="200.0" layoutX="-10.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="nom" layoutX="14.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :" />
+      <Text fx:id="prix" layoutX="121.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :" />
+   </children>
+</AnchorPane>

@@ -71,7 +71,7 @@ public class AddFeedbackFrontController implements Initializable {
         
         int iu = 1;
         //int io =  Integer.parseInt(idoffer.getText());
-        int io = a.getCurrentOfferId();
+        String io = a.getCurrentOfferLibelle();
         Feedback fdb = new Feedback(des,sqlDate,iu,io);
         
         FeedbackService fs = new FeedbackService();

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="aaa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="767.0" prefWidth="1230.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <ImageView fitHeight="979.0" fitWidth="1548.0" layoutX="-12.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="address" layoutX="152.0" layoutY="317.0" prefHeight="34.0" prefWidth="440.0" style="-fx-background-color: transparent;" stylesheets="@../images/dark-theme.css" />
+      <PasswordField fx:id="password" layoutX="152.0" layoutY="409.0" prefHeight="34.0" prefWidth="440.0" style="-fx-background-color: transparent;" stylesheets="@../images/dark-theme.css" />
+      <Button fx:id="login" layoutX="299.0" layoutY="517.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="107.0" stylesheets="@../images/dark-theme.css" text="LOGIN" />
+      <Button fx:id="btn_candidat" layoutX="318.0" layoutY="40.0" mnemonicParsing="false" onAction="#registerAsCandidat" stylesheets="@../images/dark-theme.css" text="register as candidat" />
+      <Button fx:id="btn_employer" layoutX="480.0" layoutY="40.0" mnemonicParsing="false" onAction="#registerAsEmployer" stylesheets="@../images/dark-theme.css" text="register as employer" />
+      <Button fx:id="btn_forget" layoutX="318.0" layoutY="470.0" mnemonicParsing="false" onAction="#forget_password" text="forget password" />
+   </children>
+</AnchorPane>

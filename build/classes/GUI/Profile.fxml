@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="771.0" prefWidth="1421.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Affichage_candidatFrontController">
+   <children>
+      <ImageView fitHeight="922.0" fitWidth="1520.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="381.0" layoutY="296.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="125.0" layoutY="82.0" radius="68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="labelll" layoutX="97.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="95.7366943359375" />
+      <TextFlow fx:id="description" layoutX="303.0" layoutY="467.0" prefHeight="338.0" prefWidth="446.0" />
+      <VBox layoutX="578.0" layoutY="211.0" prefHeight="185.0" prefWidth="185.0">
+         <children>
+            <Text fx:id="address" fill="#00000097" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="279.199951171875">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="phone" fill="#00000097" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="203.962890625">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="town" fill="#00000097" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="215.962890625">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="fb" fill="#00000097" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="239.962890625">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="linkdin" fill="#00000097" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="267.162841796875">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

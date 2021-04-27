@@ -74,7 +74,7 @@ public class AddFeedbackController implements Initializable {
         java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
         
         int iu = Integer.parseInt(iduser.getText());
-        int io =  Integer.parseInt(idoffer.getText());
+        String io =  idoffer.getText();
         
         Feedback fdb = new Feedback(des,sqlDate,iu,io);
         

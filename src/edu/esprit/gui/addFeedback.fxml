@@ -11,7 +11,7 @@
          <children>
             <TextArea fx:id="description" layoutX="40.0" layoutY="26.0" prefHeight="200.0" prefWidth="508.0" promptText="Aa..." stylesheets="@dark-theme.css" />
             <TextField fx:id="iduser" layoutX="64.0" layoutY="254.0" promptText="iduser" stylesheets="@dark-theme.css" />
-            <TextField fx:id="idoffer" layoutX="341.0" layoutY="254.0" promptText="idoffer" stylesheets="@dark-theme.css" />
+            <TextField fx:id="idoffer" layoutX="341.0" layoutY="254.0" promptText="offer" stylesheets="@dark-theme.css" />
             <Button fx:id="addbtn" layoutX="241.0" layoutY="293.0" mnemonicParsing="false" onAction="#send" prefHeight="31.0" prefWidth="109.0" stylesheets="@dark-theme.css" text="Post" />
          </children>
       </AnchorPane>

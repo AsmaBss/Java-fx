@@ -42,10 +42,10 @@ import tray.notification.TrayNotification;
 public class DisplayAllController implements Initializable {
 
     @FXML
-    private TableView<Complaint> ComplaintTable;
+    public TableView<Complaint> ComplaintTable;
     
     public static  TableView<Complaint> table2;
-    
+    public String str="weeeew";
     
     private TableColumn<Complaint, String> idComplaint;
     @FXML

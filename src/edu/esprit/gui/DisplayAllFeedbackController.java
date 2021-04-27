@@ -72,7 +72,7 @@ public class DisplayAllFeedbackController implements Initializable {
         descriptionFeedback.setCellValueFactory(new PropertyValueFactory<>("description"));
         dateFeedback.setCellValueFactory(new PropertyValueFactory<>("date"));
         userFeedback.setCellValueFactory(new PropertyValueFactory<>("iduser"));
-        offerFeedback.setCellValueFactory(new PropertyValueFactory<>("idoffer"));
+        offerFeedback.setCellValueFactory(new PropertyValueFactory<>("offer"));
         
         FeedbackTable.setItems(fs.displayFeedbacks());
     }    

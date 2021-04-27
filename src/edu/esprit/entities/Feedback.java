@@ -18,24 +18,24 @@ public class Feedback {
     private String description;
     private Date date;
     private int iduser;
-    private int idoffer;
+    private String offer;
 
     public Feedback() {
     }
 
-    public Feedback(int id, String description, Date date, int iduser, int idoffer) {
+    public Feedback(int id, String description, Date date, int iduser, String offer) {
         this.id = id;
         this.description = description;
         this.date = date;
         this.iduser = iduser;
-        this.idoffer = idoffer;
+        this.offer = offer;
     }
 
-    public Feedback(String description, Date date, int iduser, int idoffer) {
+    public Feedback(String description, Date date, int iduser, String offer) {
         this.description = description;
         this.date = date;
         this.iduser = iduser;
-        this.idoffer = idoffer;
+        this.offer = offer;
     }
 
     public int getId() {
@@ -70,17 +70,17 @@ public class Feedback {
         this.iduser = iduser;
     }
 
-    public int getIdoffer() {
-        return idoffer;
+    public String getOffer() {
+        return offer;
     }
 
-    public void setIdoffer(int idoffer) {
-        this.idoffer = idoffer;
+    public void setOffer(String offer) {
+        this.offer = offer;
     }
 
     @Override
     public String toString() {
-        return "Feedback{" + "id=" + id + ", description=" + description + ", date=" + date + ", iduser=" + iduser + ", idoffer=" + idoffer + '}';
+        return "Feedback{" + "id=" + id + ", description=" + description + ", date=" + date + ", iduser=" + iduser + ",offer=" + offer + '}';
     }
     
     

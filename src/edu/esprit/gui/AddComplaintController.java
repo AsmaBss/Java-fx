@@ -52,7 +52,7 @@ public class AddComplaintController implements Initializable {
     }    
 
     @FXML
-    private void send(ActionEvent event) {
+    private void send(ActionEvent event) throws IOException {
         
         
 
@@ -87,7 +87,8 @@ public class AddComplaintController implements Initializable {
         ComplaintService cs = new ComplaintService();
         cs.addComplaint(cmp);
         
-       try {
+     /*
+           
             Parent root = FXMLLoader.load(getClass().getResource("DisplayAll.fxml"));
             Scene scene = new Scene(root);
             Stage primaryStage = new Stage();
@@ -95,12 +96,16 @@ public class AddComplaintController implements Initializable {
             primaryStage.setScene(scene);
 
             primaryStage.show();
+
+
+*/
             Stage stage1 = (Stage) title.getScene().getWindow();
             stage1.close();
+            
+             
+             
 
-      } catch (IOException ex) {
-          
-        }
+      
       String titleerr = " Opportunis";
         String messagerr = "Added successfully";
         TrayNotification tray = new TrayNotification();

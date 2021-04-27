@@ -61,7 +61,7 @@ public class UpdateFeedbackController implements Initializable {
 
        description.setText(String.valueOf(ff.getDescription()));
        iduser.setText(String.valueOf(ff.getIduser()));
-       idoffer.setText(String.valueOf(ff.getIdoffer()));
+       idoffer.setText(String.valueOf(ff.getOffer()));
 
       
     }    
