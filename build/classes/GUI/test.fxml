@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="675.0" stylesheets="@../css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.TestController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="741.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/dashboard.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" stylesheets="@../css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ShowJobFrontController">
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="1021.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/dashboard.png" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="pagination" layoutX="186.0" layoutY="139.0" maxPageIndicatorCount="5" onDragDetected="#pagJob" pageCount="0" prefHeight="345.0" prefWidth="550.0" style="-fx-background-color: #CCCCCC;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="140.0" />
+      <Label fx:id="libelle" layoutX="207.0" layoutY="150.0" prefHeight="44.0" prefWidth="436.0" text="Label" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="post" layoutX="207.0" layoutY="188.0" prefHeight="30.0" prefWidth="507.0" text="Label" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="188.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="description" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="207.0" layoutY="225.0" prefHeight="162.0" prefWidth="255.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="225.0" />
+      <Label fx:id="level" layoutX="498.0" layoutY="280.0" prefHeight="30.0" prefWidth="167.0" text="Label" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="172.0" prefHeight="25.0" prefWidth="95.0" text="Salary" AnchorPane.leftAnchor="498.0" AnchorPane.topAnchor="172.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Label>
+      <Label fx:id="salary" layoutX="498.0" layoutY="188.0" prefHeight="30.0" prefWidth="167.0" text="Label" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="498.0" layoutY="220.0" text="Contract Type" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="contract" layoutX="498.0" layoutY="234.0" prefHeight="30.0" prefWidth="167.0" text="Label" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="498.0" layoutY="265.0" text="Level" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="312.0" text="Expiration Date" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="498.0" layoutY="332.0" prefHeight="21.0" prefWidth="147.0" text="Label" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="356.0" text="Catgeory" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="category" layoutX="498.0" layoutY="378.0" prefHeight="21.0" prefWidth="159.0" text="Label" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnJob" layoutX="324.0" layoutY="47.0" mnemonicParsing="false" onAction="#showJob" prefHeight="25.0" prefWidth="70.0" text="Job Offers" />
+      <Button fx:id="btnIntenship" layoutX="174.0" layoutY="47.0" mnemonicParsing="false" onAction="#showInternship" text="Internship Offers" />
+      <Button fx:id="btnJobFront" layoutX="306.0" layoutY="14.0" mnemonicParsing="false" onAction="#showJobFront" prefHeight="25.0" prefWidth="105.0" text="Job Offers Front" />
+      <Button fx:id="btnIntenshipFront" layoutX="159.0" layoutY="14.0" mnemonicParsing="false" onAction="#showInternFront" text="Internship Offers Front" />
+      <Button fx:id="btnCategory" layoutX="270.0" layoutY="82.0" mnemonicParsing="false" onAction="#showCategory" text="Category" />
+      <Button fx:id="btnApply" layoutX="623.0" layoutY="430.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" text="Apply" />
+   </children>
+</AnchorPane>
